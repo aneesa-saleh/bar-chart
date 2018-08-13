@@ -1,0 +1,63 @@
+$text-color: #2e4e51;
+$bright: #d5e2e2;
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+body,html{
+	margin: 0;
+	padding: 0;
+	font-family: "Quicksand", sans-serif;
+	text-align: center;
+}
+#chart{
+  margin-top: 15px;
+	background-color: #f4f8f9;
+  font-family: "Quicksand", sans-serif;
+}
+text{
+  font-family: "Quicksand", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  color: $text-color;
+}
+.heading{
+  margin-bottom: 0px;
+  color: $text-color;
+}
+
+.descriptionWrapper{
+  width: 600px;
+  margin: 0px auto;
+  
+  .description{
+    font-size: 12px;
+  }
+}
+
+.d3-tip{
+  background-color: rgba(213, 226, 226,0.8);
+  text-align: left;
+  padding: 5px;
+  border-radius: 5px;
+  width: 145px;
+  color: $text-color;
+  .gdp{
+    font-size: 15px;
+  }
+  .date{
+    font-size: 12px;
+  }
+}
+
+.bar:hover{
+  fill: $bright !important;
+}
+
+.axis-label{
+  font-size: 16px;
+}
+
+path.domain, .tick line{
+  stroke: #566768;
+  shape-rendering: crispEdges;
+}
